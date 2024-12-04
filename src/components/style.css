@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html , body{
+    width: 100%;
+    height: auto;
+    scroll-behavior: smooth;
+}
+
+header h1 {
+    text-align: center;
+    margin: 2vw 0 1vw;
+    font-size: 2.2vw;
+}
+
+.img-div {
+    height: 20vh;
+    width: 18vw;
+    background-color: rgb(233, 229, 229);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 65%;
+    border-bottom-right-radius: 43%;
+    border-top-right-radius: 60%;
+    position: relative;
+}
+
+img {
+    width: 8vw;
+    position: relative;
+    transition: all linear 0.4s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img:hover {
+    margin-top: -1vw;
+    cursor: pointer;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    width: 20vw;
+    padding: 1.8vw;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 3vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+section ul li {
+    list-style: none;
+}
+
+
+.pokemon_name {
+    text-transform: capitalize;
+    font-size: 1.7vw;
+    font-weight: bold;
+    margin: 0.8vw;
+}
+
+.pokemon_types {
+    background-color: #27ae60;
+    color: white;
+    width: 8.5vw;
+    padding: 0.3vw 0vw;
+    font-size: 1.1vw;
+    text-transform: capitalize;
+    border-radius: 10px;
+    margin: -0.5vw 5vw 1vw;
+    cursor: pointer;
+}
+
+.heigt-weight-speed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.99vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+.last_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 0.99vw;
+    line-height: 1.4;
+}
+
+.last_div span {
+    font-weight: bold;
+    margin-top: 1vw;
+    font-size: 1.1vw;
+}
+
+.attack {
+    margin-left: -1.2vw;
+}
+
+input {
+    position: absolute;
+    left: 49.5%;
+    top: 12%;
+    width: 20vw;
+    height: 2.3vw;
+    margin: 0.7vw;
+    padding: 0.5vw;
+    font-weight: bold;
+    font-size: 1.2vw;
+    transform: translate(-50%, -50%);
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    border-radius:7px;
+}
